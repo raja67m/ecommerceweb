@@ -1,6 +1,6 @@
 :root{
    /* --primaryColor:#0e6253; */
-   --primaryColor:rgb(241, 239, 239);
+   --primaryColor:rgb(228, 227, 227);
    --secondaryColor:#ffc107;
    --whiteColor:#fff;
    --blackColor:#222;
@@ -37,7 +37,7 @@ body{
    flex-direction:column;
 }
 .side-menu a, .sideBar-logout a{
-   padding:5% 10%;
+   padding:3% 10%;
    display: flex;
    justify-content:flex-start;
    align-items:center;
@@ -51,10 +51,85 @@ body{
 }
 .side-menu a,ion-icon , .sideBar-logout a{
    font-size:20px;
-   font-weight:500;
+   font-weight: 500;
+  
 }
 .side-menu a:hover ,.sideBar-logout a:hover{
    color: var(--whiteColor);
    background-color: var(--blackColor);
    border-radius: 50px;
+}
+.main{
+   width: 100%;
+   height: max-content;
+   padding: 2%;
+   margin-left: 300px;
+   background-color: var(--greyColor);
+   min-height:100vh;
+}
+.main-navBar{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+.main-navBar .menu-toggle{
+   display: none;
+}
+.search-bar{
+   width:60%;
+   height: 50px;
+   justify-content:space-around;
+   display: flex;
+   background-color: var(--whiteColor);
+   border-radius:20px;
+   box-shadow:rgba(149, 157, 165, 0.2)0px 8px 24px;
+ 
+}
+.search-bar input{
+   width: 80%;
+   height: 100%;
+   border: none;
+   outline: none;
+   color: var(--blackColor);
+   font-size: 14px;
+   padding: 20px;
+   border-radius:20px;
+}
+.search-bar .search-btn{
+   border: none;
+   border-radius:0px 20px 0px;
+   cursor:pointer;
+   width: 170px;
+   background-color: var(--primaryColor);
+   color: var(--blackColor);
+   font-weight: 500;
+   font-family: 'Open Sans',sans-serif;
+   font-size: 14px;
+   transition: .4s ease;
+}
+.search-bar .search-btn:hover{
+   background-color: var(--blackColor);
+   color: var(--whiteColor);
+}
+.profile{
+   display:flex;
+   align-items: center;
+   gap: 0.5rem;
+}
+.cart ,.person{
+   background-color: var(--whiteColor);
+   color: var(--blackColor);
+   padding: 0px 10px;
+   border-radius: 50%;
+   font-size: 20px;
+   height: 40px;
+   display: flex;
+   justify-content: center;
+   align-items:center;
+   box-shadow:rgba(149, 157, 165, 0.2)0px 8px 24px;
+   transition:.4s ease; 
+}
+.cart:hover,.person:hover{
+   background-color: var(--blackColor);
+   color: var(--whiteColor);
 }
