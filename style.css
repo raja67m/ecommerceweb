@@ -194,5 +194,10 @@ object-fit: cover;
 .cardCat .price{
    color: red;
    font-weight: bold;
-   
+}
+.mainMenu-cat{
+   background-color: var(--whiteColor);
+   padding: 5px;
+   border-radius: 10px;
+   box-shadow: var(--boxshadow);
 }
