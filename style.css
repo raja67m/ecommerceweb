@@ -7,6 +7,7 @@
    --softGreenColor:#d9f2ee;
    --darkGreyColor:#a7a7a7;
    --greyColor:#f5f5f5;
+   --pinkColor:#fad0ee;
    --boxshadow:rgba(149, 157, 165, 0.2)0px 8px 24px;
 }
 *{
@@ -173,7 +174,7 @@ border-radius: 10px;
 margin: 5px;
 }
 .cardView img{
-width:80px;
+width:60px;
    height:100%;
 border-radius: 10px 0px 0px 10px;
 cursor: pointer;
@@ -184,7 +185,7 @@ object-fit: cover;
    display: flex;
    flex-direction: column;
   justify-content: center;
-  padding: 10px;
+ padding:2px;
 }
 .cardCat .productName{
    color: var(--blackColor);
@@ -200,4 +201,30 @@ object-fit: cover;
    padding: 5px;
    border-radius: 10px;
    box-shadow: var(--boxshadow);
+   display: flex;
+   flex-direction: row;
+}
+.elctronicCardView{
+   display: flex;
+   flex-direction: column;
+   justify-content:center;
+   align-items: center;
+background-color: var(--pinkColor);
+border-radius: 10px;
+padding: 9px;
+margin: 5px;
+border: 2px solid red;
+box-shadow: var(--boxshadow);
+cursor: pointer;
+
+}
+.elctronicCardView .headset{
+   color: var(--blackColor);
+   font-size: 24px;
+   font-weight: bold;
+}
+.elctronicCardView p{
+font-weight: bold;
+font-size: 12px;
+
 }
