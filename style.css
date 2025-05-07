@@ -1,6 +1,6 @@
 :root{
    /* --primaryColor:#0e6253; */
-   --primaryColor:rgb(228, 227, 227);
+   --primaryColor:rgb(217, 217, 217);
    --secondaryColor:#ffc107;
    --whiteColor:#fff;
    --blackColor:#222;
@@ -9,6 +9,7 @@
    --greyColor:#f5f5f5;
    --pinkColor:#fad0ee;
    --boxshadow:rgba(149, 157, 165, 0.2)0px 8px 24px;
+  --darkGreen: #006600;
 }
 *{
    margin: 0;
@@ -136,7 +137,7 @@ body{
    color: var(--whiteColor);
 }
 .hightLight-main{
-   background-color: var(--primaryColor);
+   background-color: var(--secondaryColor);
    margin: 3% 0;
    padding: 2%;
    border-radius: 8px;
@@ -197,34 +198,54 @@ object-fit: cover;
    font-weight: bold;
 }
 .mainMenu-cat{
-   background-color: var(--whiteColor);
-   padding: 5px;
+  /* background-color:#d9b3ff; */
+  background-color: white;
+ padding: 5px;
    border-radius: 10px;
    box-shadow: var(--boxshadow);
    display: flex;
    flex-direction: row;
+   
+}
+.mainMenu-cat .menuHead{
+   font-size:12px;
+   margin:3% 9px 0px 0px;
+   padding: 5px;
+   text-align:justify;
 }
 .elctronicCardView{
    display: flex;
    flex-direction: column;
    justify-content:center;
    align-items: center;
-background-color: var(--pinkColor);
-border-radius: 10px;
-padding: 9px;
-margin: 5px;
-border: 2px solid red;
+ border-radius: 10px;
+margin:13px;
+padding: 6px 9px;
+background-color: var(--whiteColor);
 box-shadow: var(--boxshadow);
 cursor: pointer;
-
+border:1px solid #f2f2f2;
 }
 .elctronicCardView .headset{
-   color: var(--blackColor);
+   color:var(--blackColor);
    font-size: 24px;
    font-weight: bold;
+   border-radius:10px;
+   padding: 13px 25px;
+
+   background-color:#f2f2f2;
 }
 .elctronicCardView p{
-font-weight: bold;
-font-size: 12px;
-
+font-weight: 600;
+font-size: 15px;
+margin: 5px;
+font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.elctronicCardView .headset:hover{
+background-color: var(--whiteColor);
+color: var(--blackColor);
+}
+.elctronicCardView:hover{
+   background-color: var(--blackColor);
+   color: var(--whiteColor);
 }
