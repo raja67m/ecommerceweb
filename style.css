@@ -250,17 +250,76 @@ color: var(--blackColor);
    color: var(--whiteColor);
 }
 /* product card */
-.all-productcard{
-width: 300px;
-height: 100%;
-background-color: var(--whiteColor);  
+.card-container{
+   display: grid;
+   grid-template-columns: repeat(3,3fr);
+   gap: 22px;
 }
-.imgContainer{
+.card{
    width: 300px;
-   height: 200px;
+  
+   background-color: var(--whiteColor);
+   box-shadow: var(--boxshadow);
+   border-radius: 10px;
+   overflow: hidden;
+   border: 2px solid --blackColor;
 }
-.imgContainer img{
- 
-   object-fit:cover;
-
+.card img{
+   width: 100%;
+   height:auto;
+   cursor: pointer;
+   object-fit: cover;
+   transition: transfrom 1.2s;
+}
+.card img:hover{
+   transform: scale(1.2);
+}
+.card-content{
+   padding: 10px;
+}
+.card-content h5{
+   font-size: 18px;
+   font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.card-content p{
+   color: #006600;
+   font-weight: 800;
+   padding: 5px;
+}
+.card-btns{
+   display: flex;
+   margin: 5px;
+   justify-content: space-between;
+}
+.card-btns .add-btn{
+ border: none;
+   padding: 10px 20px;
+   color: var(--whiteColor);
+   background-color: var(--blackColor);
+   font-size: 18px;
+   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+   cursor: pointer;
+   font-weight: 600;
+}
+.card-btns .add-btn:hover{
+   background-color: var(--whiteColor);
+   color: var(--blackColor);
+   border: 2px solid black;
+   font-weight:600;
+}
+.card-btns .buy-btn{
+   border: none;
+   padding: 10px 20px;
+   color: var(--whiteColor);
+   background-color: var(--darkGreen);
+   font-size: 18px;
+   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+   cursor: pointer;
+   font-weight: 600;
+}
+.card-btns .buy-btn:hover{
+   background-color: var(--whiteColor);
+   color: #006600;
+   font-weight: 600;
+   border: 2px solid #006600;
 }
