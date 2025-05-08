@@ -1,47 +1,35 @@
-const productData=`[
+let iName=document.getElementById('itemName');
+let iPrice=document.getElementById('itemPrice');
+let iImage=document.getElementById('itemImage');
+const productData=[
    {
-      "id":1,
-      "itemName":"Headphone",
-      "itemPrice":"20$",
-       "image":"./images/head/head-01.jpg" 
-},
-{
-   "id":2,
-   "itemName":"sony",
-   "itemPrice":"20$",
-    "image":"./images/head/head-02.jpg" 
-},
-{
-   "id":3,
-   "itemName":"bulewale",
-   "itemPrice":"20$",
-    "image":"./images/head/head-03.jpg" 
-},
-{
-   "id":4,
-   "itemName":"Headphone",
-   "itemPrice":"20$",
-    "image":"./images/head/head-04.jpg" 
-},
-{
-   "id":5,
-   "itemName":"Headphone",
-   "itemPrice":"20$",
-    "image":"./images/head/head-05.jpg" 
-},
-{
-   "id":6,
-   "itemName":"Headphone",
-   "itemPrice":"20$",
-    "image":"./images/head/head-06.jpg" 
-},
-{
-   "id":7,
-   "itemName":"Headphone",
-   "itemPrice":"20$",
-    "image":"./images/head/head-07.jpg" 
+      id:1,
+      itemName:"headPhone",
+      itemPrice:"23$",
+       image:"./images/head/head-01.jpg" 
 }
-]`;
+];
 
-const data=JSON.parse(productData);
-console.table(data);
+ let productCard=document.getElementById('card-container');
+let acceptData=()=>{
+productData.push({
+ itemName  
+})
+}
+let proData=()=>{
+   productCard.innerHTML="";
+   data.map((x,y)=>{
+      return (productCard.innerHTML +=`
+          <div class="card" id=${y}>
+                    <img src=${x.image} alt="Not visible">
+                     <div class="card-content">
+                       <h5>${x.itemName}</h5>
+                       <p>${x.itemPrice}</p>
+                       <div class="card-btns">
+                       <button class="add-btn">Add Card</button>
+                       <button class="buy-btn">Buy Now</button>
+                       </div>
+                     </div>
+                  </div>`)
+   })
+}
