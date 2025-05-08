@@ -1,0 +1,44 @@
+[
+   {
+      "id":1,
+      "itemName":"Headphone",
+      "itemPrice":"20$",
+       "image":"./images/head/head-01.jpg" 
+},
+{
+   "id":2,
+   "itemName":"sony",
+   "itemPrice":"20$",
+    "image":"./images/head/head-02.jpg" 
+},
+{
+   "id":3,
+   "itemName":"bulewale",
+   "itemPrice":"20$",
+    "image":"./images/head/head-03.jpg" 
+},
+{
+   "id":4,
+   "itemName":"Headphone",
+   "itemPrice":"20$",
+    "image":"./images/head/head-04.jpg" 
+},
+{
+   "id":5,
+   "itemName":"Headphone",
+   "itemPrice":"20$",
+    "image":"./images/head/head-05.jpg" 
+},
+{
+   "id":6,
+   "itemName":"Headphone",
+   "itemPrice":"20$",
+    "image":"./images/head/head-06.jpg" 
+},
+{
+   "id":7,
+   "itemName":"Headphone",
+   "itemPrice":"20$",
+    "image":"./images/head/head-07.jpg" 
+}
+]
