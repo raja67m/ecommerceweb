@@ -1,24 +1,44 @@
-let iName=document.getElementById('itemName');
-let iPrice=document.getElementById('itemPrice');
-let iImage=document.getElementById('itemImage');
+
+ let productCard=document.getElementById('card-container');
+ let recommendedProduct=document.getElementById('cardWarpper');
 const productData=[
    {
-      id:1,
-      itemName:"headPhone",
-      itemPrice:"23$",
-       image:"./images/head/head-01.jpg" 
+      "id":1,
+      "itemName":"headPhone",
+      "itemPrice":"23$",
+       "image":"./images/head/head-01.jpg" 
 }
 ];
 
- let productCard=document.getElementById('card-container');
-let acceptData=()=>{
-productData.push({
- itemName  
-})
+const recommendedData=[
+   {
+      "id":1,
+      "recomName":"HeadPhone",
+      "recomPrice":"50$",
+      "recomImage":"./images/head/head-01.jpg" 
+   }
+]
+
+let recommedData=()=>{
+   recommendedProduct.innerHTML="";
+   recommendedData.map((x,y)=>{
+      return (recommendedProduct.innerHTML +=`
+         <div class="cardView" id=${y}>
+             <img src=${x.recomImage} alt="Not visible">
+               <div class="cardCat">
+                  <p class="productName">${x.recomName}</p>
+                  <p class="price">${x.recomPrice}</p>
+               </div> 
+         </div>
+
+         `)
+   })
 }
+
+
 let proData=()=>{
    productCard.innerHTML="";
-   data.map((x,y)=>{
+   productData.map((x,y)=>{
       return (productCard.innerHTML +=`
           <div class="card" id=${y}>
                     <img src=${x.image} alt="Not visible">
@@ -30,6 +50,8 @@ let proData=()=>{
                        <button class="buy-btn">Buy Now</button>
                        </div>
                      </div>
-                  </div>`)
+                  </div>`
+               );
    })
+   recommedData();
 }

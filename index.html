@@ -7,7 +7,7 @@
    <link rel="stylesheet" href="./style.css">
    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 </head>
-<body>
+<body onload="proData()">
    <!-- Silder bar -->
  <div class="sider-bar">
       <!-- logo -->
@@ -56,7 +56,7 @@
             </div>
          </div>
          <!-- card view container -->
-          <div class="cardWarpper">
+          <div class="cardWarpper" id="cardWarpper">
             <!-- card View -->
              <div class="cardView">
                <img src="./images/head/head-01.jpg" alt="Not Visible">
@@ -131,7 +131,7 @@
            <!-- product catlog -->
            <div class="product-catlog">
              <h2>Choose Order</h2>
-               <div class="card-container"id="card-container">
+               <div class="card-container" id="card-container">
                   <div class="card">
                     <img src="./images/head/head-01.jpg" id="itemImage" alt="Not visible">
                      <div class="card-content">
