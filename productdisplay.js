@@ -16,6 +16,18 @@ const recommendedData=[
       "recomName":"HeadPhone",
       "recomPrice":"50$",
       "recomImage":"./images/head/head-01.jpg" 
+   },
+   {
+      "id":2,
+       "recomName":"Lenova",
+       "recomPrice":"400$",
+       "recomImage":"./images/laptop/lap-1.jpg"
+   },
+   {
+      "id":3,
+      "recomName":"Speaker",
+      "recomPrice":"120$",
+      "reocomImage":"./images/bluetooth/blueSpeaker_01.jfif"
    }
 ]
 
