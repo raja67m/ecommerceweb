@@ -25,9 +25,21 @@ const recommendedData=[
    },
    {
       "id":3,
-      "recomName":"Speaker",
+      "recomName":"Headset",
       "recomPrice":"120$",
-      "reocomImage":"./images/bluetooth/blueSpeaker_01.jfif"
+     "recomImage":"./images/bluetooth/blueHeadset_02.jpg"
+   },
+   {
+      "id":4,
+      "recomName":"Iphone",
+      "recomPrice":"200$",
+      "recomImage":"./images/phone/iphone_01.jpg"
+   },
+   {
+      "id":5,
+      "recomName":"HP Laptop",
+      "recomPrice":"400$",
+   "recomImage":"./images/laptop/lap-2.jpg"
    }
 ]
 
