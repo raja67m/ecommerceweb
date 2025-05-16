@@ -16,6 +16,7 @@
    padding: 0;
    box-sizing: border-box;
    font-family:'Open Sans',sans-serif;
+   scroll-behavior: smooth;
 }
 body{
    width: 100%;
@@ -70,10 +71,11 @@ body{
    background-color: var(--greyColor);
    min-height:100vh;
 }
+
 .main-navBar{
    display: flex;
    justify-content: space-between;
-   align-items: center;
+   align-items: center; 
 }
 .main-navBar .menu-toggle{
    display: none;
@@ -115,22 +117,25 @@ body{
    color: var(--whiteColor);
 }
 .profile{
-   display:flex;
+   margin-right:5%;
    align-items: center;
-   gap: 0.5rem;
+
 }
 .cart ,.person{
-   background-color: var(--whiteColor);
+ background-color: var(--whiteColor);
    color: var(--blackColor);
-   padding: 0px 10px;
+   padding: 5px 10px;
    border-radius: 50%;
    font-size: 20px;
    height: 40px;
+   position: fixed;
    display: flex;
    justify-content: center;
    align-items:center;
+
    box-shadow:rgba(149, 157, 165, 0.2)0px 8px 24px;
    transition:.4s ease; 
+   z-index: 100;
 }
 .cart:hover,.person:hover,.black:hover,.forward:hover{
    background-color: var(--blackColor);
@@ -138,9 +143,11 @@ body{
 }
 .hightLight-main{
    background-color: var(--secondaryColor);
-   margin: 3% 0;
-   padding: 2%;
+   margin: 2% 0;
+   padding: 1%;
    border-radius: 8px;
+   width: 100%;
+   height: 170px;
 }
 .main-head{
    display: flex;
@@ -148,7 +155,7 @@ body{
    width: 100%;
 }
 .main-head h2{
-   font-size: 25px;
+   font-size: 20px;
 }
 .recom-menu .black,.forward{
    font-size:20px;
@@ -162,9 +169,9 @@ body{
    color: var(--whiteColor);
 }
 .cardWarpper{
-  display: grid;
-  grid-template-columns: repeat(3,3flr);
-  gap: 12px;
+  display:flex;
+
+ flex-direction: row;
 
 }
 .cardView{
@@ -233,7 +240,6 @@ border:1px solid #f2f2f2;
    font-weight: bold;
    border-radius:10px;
    padding: 13px 25px;
-
    background-color:#f2f2f2;
 }
 .elctronicCardView p{
@@ -253,39 +259,47 @@ color: var(--blackColor);
 /* product card */
 .card-container{
    display: grid;
-   grid-template-columns: repeat(3,3fr);
-   gap: 22px;
+   grid-template-columns:repeat(4,1fr);
+   gap:2%;
+   width: 100%;
+   margin: 1rem;
+   border-radius: 8px;
 }
 .card{
-   width: 300px;
-  
+   min-height: 330px;
+   height: 100%;
    background-color: var(--whiteColor);
    box-shadow: var(--boxshadow);
    border-radius: 10px;
-   overflow: hidden;
-   border: 2px solid --blackColor;
+  margin: 1% 0;
+  
 }
 .card img{
    width: 100%;
-   height:auto;
+   height:180px;
    cursor: pointer;
-   object-fit: cover;
+   object-fit:fill;
    transition: transfrom 1.2s;
 }
 .card img:hover{
    transform: scale(1.2);
 }
 .card-content{
-   padding: 10px;
+   padding: 5px 10px;
 }
 .card-content h5{
    font-size: 18px;
    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 .card-content p{
-   color: #006600;
+   color: red;
    font-weight: 800;
    padding: 5px;
+}
+.card-content .des{
+   font-size: 12px;
+   color: brown;
+
 }
 .card-btns{
    display: flex;
@@ -294,10 +308,10 @@ color: var(--blackColor);
 }
 .card-btns .add-btn{
  border: none;
-   padding: 10px 20px;
+   padding: 5px 10px;
    color: var(--whiteColor);
    background-color: var(--blackColor);
-   font-size: 18px;
+   font-size: 14px;
    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
    cursor: pointer;
    font-weight: 600;
@@ -310,10 +324,10 @@ color: var(--blackColor);
 }
 .card-btns .buy-btn{
    border: none;
-   padding: 10px 20px;
+   padding: 5px 10px;
    color: var(--whiteColor);
    background-color: var(--darkGreen);
-   font-size: 18px;
+   font-size: 14px;
    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
    cursor: pointer;
    font-weight: 600;
