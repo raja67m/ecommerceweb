@@ -174,7 +174,13 @@ const recommendedData=[
       "id":5,
       "recomName":"HP Laptop",
       "recomPrice":"400$",
-   "recomImage":"./images/laptop/lap-2.jpg"
+      "recomImage":"./images/laptop/lap-2.jpg"
+   },
+    {
+      "id":6,
+      "recomName":"Camera",
+      "recomPrice":"800$",
+      "recomImage":"./images/camera/camera_01.jpg"
    }
 ]
 

@@ -147,7 +147,7 @@ body{
    padding: 1%;
    border-radius: 8px;
    width: 100%;
-   height: 170px;
+   height: 140px;
 }
 .main-head{
    display: flex;
@@ -169,37 +169,48 @@ body{
    color: var(--whiteColor);
 }
 .cardWarpper{
-  display:flex;
-
- flex-direction: row;
-
+  display: grid;
+   grid-template-columns: repeat(6,1fr);
+  max-width: 1000px;
+  height: auto;
+  gap:4px;
+ overflow-x: auto;
+ scrollbar-width:none;
+}
+.cardWarpper::-webkit-scrollbar{
+   display: none;
 }
 .cardView{
 display: flex;
 flex-direction: row;
 background-color: var(--whiteColor);
-width:50%;
+width: 270px;
+height: 70px;
 border-radius: 10px;
 margin: 5px;
+cursor: pointer;
 }
 .cardView img{
-width:60px;
-   height:100%;
+width:80px;
+height:100%;
 border-radius: 10px 0px 0px 10px;
 cursor: pointer;
 box-shadow: var(--boxshadow);
-object-fit: cover;
+object-fit:fill;
+
 }
 .cardCat {
    display: flex;
    flex-direction: column;
   justify-content: center;
- padding:2px;
+  align-items: center;
+ padding:2px 5px;
 }
 .cardCat .productName{
    color: var(--blackColor);
    font-weight: bold;
    margin: 5px;
+   font-size: 14px;
 }
 .cardCat .price{
    color: red;
