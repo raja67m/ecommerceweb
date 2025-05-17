@@ -1,6 +1,9 @@
 
  let productCard=document.getElementById('card-container');
  let recommendedProduct=document.getElementById('cardWarpper');
+
+//  all product data set
+
 const productData=[
    {
       "id":1,
@@ -144,6 +147,7 @@ const productData=[
 },
 ];
 
+// product recomed data set
 
 const recommendedData=[
    {

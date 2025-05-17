@@ -119,7 +119,20 @@ body{
 .profile{
    margin-right:5%;
    align-items: center;
+   position:relative;
+   
 
+}
+.addCircle{
+   position:absolute;
+   top:10px;
+left: 50px;
+background-color: rgb(251, 19, 19);
+padding:5px 10px;
+border-radius: 50%;
+color: var(--whiteColor);
+z-index: 100;
+position: fixed;
 }
 .cart ,.person{
  background-color: var(--whiteColor);
