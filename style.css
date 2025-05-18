@@ -119,36 +119,32 @@ body{
 .profile{
    margin-right:5%;
    align-items: center;
-   position:relative;
-   
+  display: flex;
+  
 
 }
-.addCircle{
-   position:absolute;
-   top:10px;
-left: 50px;
-background-color: rgb(251, 19, 19);
-padding:5px 10px;
-border-radius: 50%;
-color: var(--whiteColor);
-z-index: 100;
-position: fixed;
+.cart span{
+   color: red;
+   font-size: 15px;
+ font-weight: 800;
 }
 .cart ,.person{
+ 
+  text-decoration: none;
  background-color: var(--whiteColor);
    color: var(--blackColor);
    padding: 5px 10px;
    border-radius: 50%;
    font-size: 20px;
    height: 40px;
-   position: fixed;
+ margin: 5px;
    display: flex;
    justify-content: center;
    align-items:center;
 
    box-shadow:rgba(149, 157, 165, 0.2)0px 8px 24px;
    transition:.4s ease; 
-   z-index: 100;
+ 
 }
 .cart:hover,.person:hover,.black:hover,.forward:hover{
    background-color: var(--blackColor);
@@ -361,4 +357,35 @@ color: var(--blackColor);
    color: #006600;
    font-weight: 600;
    border: 2px solid #006600;
+}
+
+/* billing tables */
+
+.billingContainer{
+   display: flex;
+   flex-direction: column;
+   position: fixed;
+   z-index: 100;
+   top: 80px;
+   right: 140px;
+   background-color: var(--whiteColor);
+   padding: 10px;
+  height:max-content;
+}
+.billingContainer table{
+   width:max-content;
+   border-collapse: collapse;
+   
+}
+thead{
+   color: white;
+   background-color: var(--blackColor);
+   font-weight: 700;
+   font-family: monospace;
+   
+}
+th,td{
+   margin: 5px;
+   padding: 15px;
+   border: 1px solid white;
 }

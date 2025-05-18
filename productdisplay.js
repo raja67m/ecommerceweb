@@ -1,6 +1,9 @@
 
  let productCard=document.getElementById('card-container');
  let recommendedProduct=document.getElementById('cardWarpper');
+ let countScreen=document.getElementById('addNum');
+
+ let count=0;
 
 //  all product data set
 
@@ -216,7 +219,7 @@ let proData=()=>{
                        <p class="des">${x.itemDes}</p>
                        <p>${x.itemPrice}</p>
                        <div class="card-btns">
-                       <button class="add-btn">Add Card</button>
+                       <button class="add-btn" onClick="countAddCard()">Add Card</button>
                        <button class="buy-btn">Buy Now</button>
                        </div>
                      </div>
@@ -225,3 +228,13 @@ let proData=()=>{
    })
    recommedData();
 }
+
+// addto card count fucntion
+function countAddCard(){
+   count ++;
+   countScreen.innerHTML=count;
+   if(count>9){
+      countScreen.innerHTML +=  "+";
+      }
+}
+
