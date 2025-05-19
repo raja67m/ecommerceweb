@@ -2,6 +2,9 @@
  let productCard=document.getElementById('card-container');
  let recommendedProduct=document.getElementById('cardWarpper');
  let countScreen=document.getElementById('addNum');
+ let displayBillingTable=document.getElementById('billingContainer');
+ let addCard=document.getElementById('cart');
+ let addCardClose=document.getElementById('Close');
 
  let count=0;
 
@@ -238,3 +241,12 @@ function countAddCard(){
       }
 }
 
+// display & close the billing table
+addCard.addEventListener('click',()=>{
+   displayBillingTable.style.display="flex";
+  countScreen.innerHTML="";
+})
+
+addCardClose.addEventListener('click',()=>{
+   displayBillingTable.style.display="none";
+})

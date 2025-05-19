@@ -41,12 +41,22 @@
            </div>
            <!-- profile view left side nav bar-->
             <div class="profile">
-               <a class="cart" href="#"><ion-icon name="cart-outline"></ion-icon><span id="addNum"></span></a>
+               <a class="cart" href="#" id="cart"><ion-icon name="cart-outline"></ion-icon><span id="addNum"></span></a>
                <a class="person" href="#"><ion-icon name="person-outline"></ion-icon></a>
             </div>
+                  <!-- order completed popup -->
+                     <div id="popupContainer">
+                        <div id="popupContent">
+                           <p>Thank You, Your order is comfrimed!</p>
+                              <div class="popupBtns">
+                                 <button id="ViewStatus">View Status</button>
+                                 <button id="dismiss">Dismiss</button>
+                              </div>
+                        </div>
 
+                     </div>
                <!-- billing table popup -->
-                  <div class="billingContainer">
+                  <div class="billingContainer" id="billingContainer">
                      <ion-icon id="Close" name="close-outline"></ion-icon>
                      <table>
                         <thead>

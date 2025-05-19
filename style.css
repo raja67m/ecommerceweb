@@ -10,6 +10,7 @@
    --pinkColor:#fad0ee;
    --boxshadow:rgba(149, 157, 165, 0.2)0px 8px 24px;
   --darkGreen: #006600;
+  --lightGreen:#99ff99;
 }
 *{
    margin: 0;
@@ -371,8 +372,9 @@ color: var(--blackColor);
    background-color: var(--whiteColor);
    padding: 5px;
   height:max-content;
-  
-}
+  box-shadow: var(--boxshadow);
+  display: none;
+  }
 .billingContainer #Close{
    color: red;
    font-size: 20px;
@@ -449,4 +451,18 @@ tbody td img{
 .billingContainer #buy:hover{
 color: var(--blackColor);
 background-color: var(--whiteColor);
+}
+
+/* order completed popup */
+
+#popupContainer{
+   display: flex;
+   flex-direction: column;
+   top: 0;
+   left: 0;
+   background-color:var(--lightGreen);
+   border-radius: 8px;
+   padding: 10px;
+justify-content: center;
+align-items: center;
 }
