@@ -10,7 +10,7 @@
    --pinkColor:#fad0ee;
    --boxshadow:rgba(149, 157, 165, 0.2)0px 8px 24px;
   --darkGreen: #006600;
-  --lightGreen:#b3ffb3;
+  --lightGreen:#e6ffee;
 }
 *{
    margin: 0;
@@ -455,6 +455,7 @@ background-color: var(--whiteColor);
 
 /* order completed popup */
 #popupContainer{
+   display: none;
    position: fixed;
    top: 30%;
    left: 50%;
@@ -467,11 +468,56 @@ background-color: var(--whiteColor);
   font-weight: 700;
   }
  #popupContent{
- 
+  text-align: center;
    margin: 5px;
  }
- #popupBtns{
+ .popupBtns{
    display: flex;
-   justify-content: space-between;
-   margin: 10px;
+   margin: 7px;
+   justify-content: center;
  }
+#ViewStatus{
+   background-color: #b3ffcc;
+   color: green;
+   padding: 5px;
+   border: none;
+   border-radius: 5px;
+   cursor: pointer;
+   font-size: 14px;
+   font-weight: 600;
+ }
+ #dismiss{
+   color:#006600;
+   margin-left: 5px;
+   background-color:var(--lightGreen);
+   border: none;
+ cursor: pointer;
+ padding: 5px;
+   font-size: 14px;
+   font-weight: 600;
+ }
+.success {
+  padding: 6rem;
+  border-radius: 0.375rem;
+  background-color: rgb(3, 250, 77);
+}
+
+.succes-svg {
+  color: rgb(74 222 128);
+  width: 2rem;
+  height: 3.25rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
