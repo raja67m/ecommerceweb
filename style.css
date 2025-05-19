@@ -10,7 +10,7 @@
    --pinkColor:#fad0ee;
    --boxshadow:rgba(149, 157, 165, 0.2)0px 8px 24px;
   --darkGreen: #006600;
-  --lightGreen:#99ff99;
+  --lightGreen:#b3ffb3;
 }
 *{
    margin: 0;
@@ -454,15 +454,24 @@ background-color: var(--whiteColor);
 }
 
 /* order completed popup */
-
 #popupContainer{
-   display: flex;
-   flex-direction: column;
-   top: 0;
-   left: 0;
-   background-color:var(--lightGreen);
-   border-radius: 8px;
+   position: fixed;
+   top: 30%;
+   left: 50%;
+   background-color: var(--lightGreen);
    padding: 10px;
-justify-content: center;
-align-items: center;
-}
+  z-index: 100;
+  border-radius: 10px;
+  color: #006600;
+  font-size: 16px;
+  font-weight: 700;
+  }
+ #popupContent{
+ 
+   margin: 5px;
+ }
+ #popupBtns{
+   display: flex;
+   justify-content: space-between;
+   margin: 10px;
+ }
